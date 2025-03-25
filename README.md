@@ -1,107 +1,27 @@
-# AddressBook-Project-Frontend-Using-Angular
+# AddressBookUI
 
-📖 Address Book Application
-A full-stack application using Angular & Spring Boot with MySQL, Redis, RabbitMQ, Swagger, and Gmail authentication.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.13.
 
+## Development server
 
-🚀 Features
-✅ User Authentication (JWT-based)
-✅ CRUD Operations (Add, Edit, Delete Contacts)
-✅ MySQL Database Integration
-✅ Redis Caching for Performance
-✅ RabbitMQ for Message Queues
-✅ Swagger API Documentation
-✅ Gmail App Password Authentication
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-📌 Tech Stack
-Frontend	Backend	Database	Other Services
-TypeScript	Java	SQL	RabbitMQ
-Bootstrap	Spring Security	JPA/Hibernate	Swagger API Docs
-🎨 Frontend Setup (Angular 17)
-🔹 Prerequisites
-Ensure you have the following installed:
+## Code scaffolding
 
-📌 Node.js & npm
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-📌 Angular CLI
+## Build
 
-⚡ Installation & Running
-git clone https://github.com/ayush-singh787898/AddressBook-Project-Backend-SpringBoot.git
-cd client_AddressBook
-npm install
-ng serve
-🌍 Now, open your browser and visit http://localhost:4200 🎉
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-🛠️ Backend Setup (Spring Boot)
-🔹 Prerequisites
-Before running the backend, ensure the following services are set up:
-✅ MySQL 🛢️
-✅ Redis ⚡
-✅ RabbitMQ 📩
-✅ Swagger API Docs 📜
-✅ Gmail App Password 📧
+## Running unit tests
 
-⚡ Steps to Configure & Run
-🔹 1. Configure MySQL
-Update your application.properties with:
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-spring.datasource.url=jdbc:mysql://localhost:3306/addressbook
-spring.datasource.username=your_mysql_username
-spring.datasource.password=your_mysql_password
-🔹 2. Set Up Gmail App Password
-Enable 2-Step Verification in Gmail
+## Running end-to-end tests
 
-Generate an App Password
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-Update application.properties:
+## Further help
 
-spring.mail.username=your_email@gmail.com
-spring.mail.password=your_app_password
-🔹 3. Start Backend
-Run the backend application:
-
-mvn spring-boot:run
-🔹 4. API Endpoints (Test via Postman)
-📌 Register a New User
-
-POST http://localhost:8080/api/auth/register
-📄 Request Body (JSON - raw)
-
-{
-  "username": "your_username",
-  "email": "your_email@example.com",
-  "role": "USER",
-  "password": "your_password"
-}
-🔑 Login Request
-
-POST http://localhost:8080/api/auth/login
-📄 Request Body (JSON - raw)
-
-{
-  "username": "your_username",
-  "password": "your_password"
-}
-✅ Successful Login Response
-
-{
-  "userId": 1,
-  "token": "your_jwt_token"
-}
-🔹 5. Update AddressBookController
-✏️ Modify the username at line 114 and user ID at line 139 for first-time setup.
-
-📄 API Documentation
-📜 Swagger UI is available at:
-http://localhost:8080/swagger-ui.html
-
-🎯 Final Steps
-Once everything is set up, both frontend and backend should be up and running smoothly! 🚀
-
-💡 Need Help?
-For any issues or support, feel free to reach out!
-
-📧 Contact: ayushsingh05086@gmail.com
-👨‍💻 Author: Ayush Kumar Singh
-
-🌟 If you find this project useful, consider giving it a star! ⭐
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
